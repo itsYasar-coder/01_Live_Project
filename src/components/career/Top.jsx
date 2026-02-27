@@ -25,17 +25,17 @@ const Top = () => {
         <Navbar />
 
    
-      <div className="relative z-40 flex flex-col justify-center items-center px-28 mt-40">
+      <div className="relative z-40 flex flex-col justify-center items-center px-28 mt-20">
 
     
-        <h1 className="text-8xl font-bold font-serif">
-          Modern Solutions
+        <h1 className="text-9xl font-bold font-serif top-0">
+         Let's Build 
         </h1>
 
  
-        <p className="text-gray-400 mt-6 text-lg  whitespace-nowrap leading-relaxed">
-          A suite of services designed for the global-first, digital-native enterprise.
-        </p>
+        <h1 className=" mt-4 text-9xl  whitespace-nowrap font-serif font-bold">
+         Your Legacy
+        </h1>
       </div>
     </div>
   )
