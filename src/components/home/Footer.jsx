@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="relative mt-24 px-6 py-20 text-center overflow-hidden
-    bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-900">
+    bg-gradient-to-br from-purple-800 via-indigo-900 to-blue-900 rounded-2xl">
 
       {/* Extra Glow Layer */}
       <div className="absolute top-[-100px] left-[-60px] 
