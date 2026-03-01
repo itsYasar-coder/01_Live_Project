@@ -3,34 +3,20 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-center pt-6 px-4">
-      <div className="w-full max-w-7xl flex items-center justify-between px-6 py-3 rounded-full bg-white/5 backdrop-blur-xl border border-white/10 shadow-xl">
+    <nav className="w-full px-4 pt-6">
+      <div className="w-full bg-white/5 backdrop-blur-xl border border-white/10 
+        rounded-full py-3 px-5 flex justify-between items-center shadow-lg">
 
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="bg-gradient-to-r from-purple-600 to-blue-500 p-2 rounded-lg">
-            <i className="ri-award-fill text-white text-lg"></i>
-          </div>
-          <h2 className="font-bold text-white text-lg">
-            Recruit Kings
-          </h2>
-        </div>
+        <h2 className="text-lg font-bold text-white">
+          Recruit Kings
+        </h2>
 
-        {/* Links */}
-        <div className="hidden md:flex gap-8 text-sm text-gray-300 font-medium">
+        <div className="flex gap-4 text-sm text-gray-200">
           <Link to="/">HOME</Link>
           <Link to="/about">ABOUT</Link>
           <Link to="/services">SERVICES</Link>
           <Link to="/careers">CAREERS</Link>
         </div>
-
-        {/* Button */}
-        <Link
-          to="/letsgo"
-          className="hidden md:block bg-white text-black px-6 py-2 rounded-full font-semibold hover:scale-105 transition"
-        >
-          Let's Go
-        </Link>
 
       </div>
     </nav>
