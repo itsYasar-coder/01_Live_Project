@@ -2,30 +2,30 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#050515] text-white py-24 px-6 text-center">
+    <div className="bg-[#040410] py-24 text-center px-6">
 
-      <h1 className="text-3xl sm:text-5xl font-bold mb-6">
+      <h2 className="text-4xl md:text-5xl font-extrabold mb-6">
         Ready to Scale?
-      </h1>
+      </h2>
 
       <p className="text-gray-400 max-w-xl mx-auto mb-10">
-        Join the elite network that trusts Recruit Kings.
+        Join the elite companies trusting Recruit Kings.
       </p>
 
-      <div className="flex flex-col sm:flex-row justify-center gap-6 mb-16">
-        <button className="px-8 py-3 rounded-full border border-white/20 hover:bg-white hover:text-black transition">
-          Hire Top Talent
+      <div className="flex flex-col sm:flex-row justify-center gap-6">
+        <button className="px-8 py-3 rounded-full bg-white text-black font-semibold hover:scale-105 transition">
+          Hire Talent
         </button>
+
         <button className="px-8 py-3 rounded-full border border-white/20 hover:bg-white hover:text-black transition">
           Join Network
         </button>
       </div>
 
-      <p className="text-gray-500 text-sm">
-        © 2026 RECRUIT KINGS. ENGINEERED EXCELLENCE.
+      <p className="text-gray-500 text-sm mt-16">
+        © 2026 Recruit Kings. All rights reserved.
       </p>
-
-    </footer>
+    </div>
   );
 };
 
