@@ -3,35 +3,37 @@ import { Search } from "lucide-react";
 
 const Input = () => {
   return (
-    <div className="px-4 mt-10 flex flex-col items-center">
+    <section className="px-6 mt-14">
 
-      <div className="relative w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-full shadow-lg">
+      <div className="relative bg-white/5 backdrop-blur-xl 
+      border border-white/10 rounded-2xl p-5 shadow-xl">
 
-        <Search
-          size={18}
-          className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-300"
-        />
+        <div className="flex items-center gap-3 bg-black/30 
+        border border-white/10 rounded-full px-4 py-3">
 
-        <input
-          type="text"
-          placeholder="Explore Industries..."
-          className="w-full py-4 pl-12 pr-28 bg-transparent text-white rounded-full
-          placeholder-gray-400 outline-none"
-        />
+          <Search size={18} className="text-gray-400" />
 
-        <button
-          className="absolute right-2 top-1/2 -translate-y-1/2
-          bg-blue-500 text-white px-5 py-2 rounded-full font-semibold">
-          Discover
+          <input
+            type="text"
+            placeholder="Search Industries"
+            className="bg-transparent outline-none text-white flex-1 placeholder-gray-400 text-sm"
+          />
+
+        </div>
+
+        <button className="w-full mt-4 py-3 rounded-full 
+        bg-gradient-to-r from-purple-600 to-blue-500 
+        text-white font-semibold shadow-lg">
+          Discover Opportunities
         </button>
 
       </div>
 
-      <p className="text-gray-400 text-sm text-center mt-6 max-w-xs">
-        Elite recruitment for high-growth ventures.
+      <p className="text-gray-500 text-xs text-center mt-5 leading-relaxed">
+        Elite recruitment for high-growth ventures worldwide.
       </p>
 
-    </div>
+    </section>
   );
 };
 

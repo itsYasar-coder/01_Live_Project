@@ -1,24 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <nav className="w-full px-4 pt-6">
-      <div className="w-full bg-white/5 backdrop-blur-xl border border-white/10 
-        rounded-full py-3 px-5 flex justify-between items-center shadow-lg">
+    <nav className="w-full px-5 pt-6 relative z-20">
 
-        <h2 className="text-lg font-bold text-white">
-          Recruit Kings
+      <div className="flex justify-between items-center">
+
+        <h2 className="text-white text-xl font-bold tracking-wide">
+          Recruit <span className="text-blue-400">Kings</span>
         </h2>
 
-        <div className="flex gap-4 text-sm text-gray-200">
-          <Link to="/">HOME</Link>
-          <Link to="/about">ABOUT</Link>
-          <Link to="/services">SERVICES</Link>
-          <Link to="/careers">CAREERS</Link>
+        <div className="w-10 h-10 rounded-full bg-white/5 backdrop-blur-xl 
+        border border-white/10 flex items-center justify-center">
+          <Menu size={18} className="text-white" />
         </div>
 
       </div>
+
     </nav>
   );
 };
