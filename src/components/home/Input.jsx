@@ -1,40 +1,20 @@
-import React from "react";
+import React from "react"; 
 import { Search } from "lucide-react";
-
-const Input = () => {
-  return (
-    <section className="px-6 mt-14">
-
-      <div className="relative bg-white/5 backdrop-blur-xl 
-      border border-white/10 rounded-2xl p-5 shadow-xl">
-
-        <div className="flex items-center gap-3 bg-black/30 
-        border border-white/10 rounded-full px-4 py-3">
-
-          <Search size={18} className="text-gray-400" />
-
-          <input
-            type="text"
-            placeholder="Search Industries"
-            className="bg-transparent outline-none text-white flex-1 placeholder-gray-400 text-sm"
-          />
-
-        </div>
-
-        <button className="w-full mt-4 py-3 rounded-full 
-        bg-gradient-to-r from-purple-600 to-blue-500 
-        text-white font-semibold shadow-lg">
-          Discover Opportunities
-        </button>
-
-      </div>
-
-      <p className="text-gray-500 text-xs text-center mt-5 leading-relaxed">
-        Elite recruitment for high-growth ventures worldwide.
-      </p>
-
-    </section>
-  );
-};
-
-export default Input;
+ const Input = () => { 
+  return ( 
+  <div className="flex flex-col items-center mt-10 gap-4"> 
+  <div className=" relative w-[600px] bg-white/1 backdrop-blur-xl border border-white/7 rounded-full shadow-lg " > 
+  <Search size={18} className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-300" /> 
+  <input type="text" placeholder="Explore Industries...." className=" w-full py-3 pl-12 pr-32 rounded-full bg-transparent text-white outline-none placeholder-gray-300 " /> 
+  <a href="/discover" className=" absolute right-2 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-blue-400 duration-200 " > 
+  Discover
+   </a>
+    </div> 
+    <div className="text-center text-white text-sm opacity-80"> 
+      <p>Elite Recruitment For High-growth ventures. We specialize in</p>
+       <p>the human architecture of tomorrow</p> 
+       </div> 
+       </div> 
+       ); 
+      };
+       export default Input;
